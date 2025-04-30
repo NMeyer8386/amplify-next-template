@@ -1,3 +1,5 @@
+'use client'; // Makes sure AWS knows to use the client and not process this on the server
+
 import { useEffect, useState } from 'react';
 
 function Callback() {
