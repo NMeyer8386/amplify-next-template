@@ -27,9 +27,12 @@ function Callback() {
         });
 
         if (!response.ok) {
-          throw new Error(`Failed to get dashboard URL: ${response.statusText}`);
+            const errorData = await response.json();
+            console.error('Backend error response:', errorData);
+          
+            throw new Error(`Failed to get dashboard URL: ${errorData?.error || response.statusText}`);
         }
-
+        
         const data = await response.json();
         const embedUrl = data.embed_url;
 
