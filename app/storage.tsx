@@ -3,6 +3,7 @@ import { S3Client, PutObjectCommand, GetObjectCommand, ListObjectsV2Command } fr
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { Amplify } from "aws-amplify";
 import { fetchAuthSession, fetchUserAttributes} from '@aws-amplify/auth'
+import { list, getUrl } from "@aws-amplify/storage";
 
 const REGION = "ca-central-1";           // your bucket’s region
 const BUCKET = "my-app-docs";            // your single bucket name
@@ -90,3 +91,27 @@ export async function uploadMyFile(key: string, file: Blob): Promise<void> {
     });
     await client.send(cmd);
   }
+
+export async function listObjectsFromS3(){
+    try {
+        const result = await list({
+            path: 'public/',
+            options: {
+                listAll: true
+            }
+        });
+    } catch (error){
+        console.log(error);
+    }
+}
+
+export async function getFileLinks(fileName : string){
+    const getUrlResult = await getUrl({
+        path: `public/${fileName}`,
+        options: {
+            validateObjectExistence: true
+        }
+    });
+    console.log('signed URL: ', getUrlResult.url);
+    console.log('URL expires at: ', getUrlResult.expiresAt);
+}

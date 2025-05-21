@@ -31,7 +31,7 @@ const client = generateClient<Schema>();
 export default function App() {
   return (
     <Authenticator>
-      {/* wrap the signout in a void cast */}
+      {/* wrap the signout in a void cast  */}
       {({ signOut, user }) => <Dashboard signOut={() => signOut?.()} username={user!.username} />} 
     </Authenticator>
   );
