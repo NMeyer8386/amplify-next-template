@@ -1,0 +1,196 @@
+{
+  "auth": {
+    "amplifynexttemplate9c7f0dae": {
+      "customAuth": false,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "imported"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_allowUnauthenticatedIdentities": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_authRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_authRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_identityPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_identityPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_unauthRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_unauthRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate2328aad4_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate2328aad4"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_allowUnauthenticatedIdentities": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_authRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_authRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_identityPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_identityPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_unauthRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_unauthRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifynexttemplate9c7f0dae_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifynexttemplate9c7f0dae"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "AmplifyStorageResource": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

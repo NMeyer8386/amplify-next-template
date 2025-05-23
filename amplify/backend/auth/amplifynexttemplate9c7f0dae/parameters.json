@@ -1,0 +1,20 @@
+{
+  "authSelections": "identityPoolAndUserPool",
+  "resourceName": "amplifynexttemplate9c7f0dae",
+  "serviceType": "imported",
+  "region": "ca-central-1",
+  "aliasAttributes": [
+    "email"
+  ],
+  "authProvidersUserPool": [],
+  "requiredAttributes": [
+    "email"
+  ],
+  "passwordPolicyMinLength": 6,
+  "passwordPolicyCharacters": [],
+  "mfaConfiguration": "OFF",
+  "autoVerifiedAttributes": [
+    "email"
+  ],
+  "mfaTypes": []
+}

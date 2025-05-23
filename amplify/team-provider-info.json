@@ -1,0 +1,48 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifynexttemplate-dev-c4e01-authRole",
+      "UnauthRoleArn": "arn:aws:iam::324037277237:role/amplify-amplifynexttemplate-dev-c4e01-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::324037277237:role/amplify-amplifynexttemplate-dev-c4e01-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-amplifynexttemplate-dev-c4e01-deployment",
+      "UnauthRoleName": "amplify-amplifynexttemplate-dev-c4e01-unauthRole",
+      "StackName": "amplify-amplifynexttemplate-dev-c4e01",
+      "StackId": "arn:aws:cloudformation:ca-central-1:324037277237:stack/amplify-amplifynexttemplate-dev-c4e01/cdf55e40-380f-11f0-91fd-0645a4288595",
+      "AmplifyAppId": "d1anryr55a81cw"
+    },
+    "categories": {
+      "auth": {
+        "amplifynexttemplate2328aad4": {
+          "userPoolId": "ca-central-1_URmo5iTYo",
+          "userPoolName": "User pool - ethyjf",
+          "webClientId": "6ulhpadeqg7f8cb7u8c2m03t98",
+          "nativeClientId": "6ulhpadeqg7f8cb7u8c2m03t98",
+          "identityPoolId": "ca-central-1:ffbd856b-eac4-4af3-9d04-5b04eee9e989",
+          "identityPoolName": "UnityAuthPool",
+          "allowUnauthenticatedIdentities": false,
+          "authRoleArn": "arn:aws:iam::324037277237:role/service-role/UnityAuth",
+          "authRoleName": "UnityAuth",
+          "unauthRoleArn": "arn:aws:iam::324037277237:role/service-role/UnityAuthPoolUnauthRole",
+          "unauthRoleName": "UnityAuthPoolUnauthRole"
+        },
+        "amplifynexttemplate9c7f0dae": {
+          "userPoolId": "ca-central-1_URmo5iTYo",
+          "userPoolName": "User pool - ethyjf",
+          "webClientId": "6ulhpadeqg7f8cb7u8c2m03t98",
+          "nativeClientId": "6ulhpadeqg7f8cb7u8c2m03t98",
+          "identityPoolId": "ca-central-1:ffbd856b-eac4-4af3-9d04-5b04eee9e989",
+          "identityPoolName": "UnityAuthPool",
+          "allowUnauthenticatedIdentities": false,
+          "authRoleArn": "arn:aws:iam::324037277237:role/service-role/UnityAuth",
+          "authRoleName": "UnityAuth",
+          "unauthRoleArn": "arn:aws:iam::324037277237:role/service-role/UnityAuthPoolUnauthRole",
+          "unauthRoleName": "UnityAuthPoolUnauthRole"
+        }
+      },
+      "storage": {
+        "AmplifyStorageResource": {}
+      }
+    }
+  }
+}

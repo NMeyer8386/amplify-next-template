@@ -4,10 +4,11 @@ import "./../app/app.css";
 import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
 import "@aws-amplify/ui-react/styles.css";
-import {generateClient} from "aws-amplify/data" 
+import { generateClient } from "aws-amplify/data" 
 import type { Schema } from "@/amplify/data/resource";
 import { Authenticator } from "@aws-amplify/ui-react";
 import { FileUploader } from "@aws-amplify/ui-react-storage";
+import * as React from 'react';
 
 Amplify.configure(outputs);
 
@@ -42,12 +43,15 @@ export default function App() {
           )}
           <button onClick={signOut}>Sign out</button>
           <h1>Upload a File</h1>
-          {user &&     <FileUploader
-      acceptedFileTypes={['image/*']}
-      path="public/"
-      maxFileCount={1}
-      isResumable
-    />}
+          {user &&     
+          
+          <FileUploader
+            acceptedFileTypes={['image/*']}
+            path={({ identityId }) => `protected/${identityId}/`}
+            maxFileCount={1}
+            isResumable
+          
+          />}
         </main>
       )}
     </Authenticator>
