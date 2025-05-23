@@ -4,10 +4,10 @@ import "./../app/app.css";
 import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
 import "@aws-amplify/ui-react/styles.css";
-import FileUploader from "@/components/fileuploader";
 import {generateClient} from "aws-amplify/data" 
 import type { Schema } from "@/amplify/data/resource";
 import { Authenticator } from "@aws-amplify/ui-react";
+import { FileUploader } from "@aws-amplify/ui-react-storage";
 
 Amplify.configure(outputs);
 
@@ -32,6 +32,17 @@ Amplify.configure({
 
 const client = generateClient<Schema>();
 
+export const DefaultFileUploaderExample = () => {
+  return (
+    <FileUploader
+      acceptedFileTypes={['image/*']}
+      path="public/"
+      maxFileCount={1}
+      isResumable
+    />
+  );
+};
+
 export default function App() {
 
   return (
@@ -51,7 +62,12 @@ export default function App() {
           <button onClick={signOut}>Sign out</button>
 
           <h1>Upload a File</h1>
-          {user && <FileUploader entity_id={user.username} />}
+          {user &&     <FileUploader
+      acceptedFileTypes={['image/*']}
+      path="public/"
+      maxFileCount={1}
+      isResumable
+    />}
         </main>
 
       )}
