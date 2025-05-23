@@ -32,35 +32,15 @@ Amplify.configure({
 
 const client = generateClient<Schema>();
 
-export const DefaultFileUploaderExample = () => {
-  return (
-    <FileUploader
-      acceptedFileTypes={['image/*']}
-      path="public/"
-      maxFileCount={1}
-      isResumable
-    />
-  );
-};
-
 export default function App() {
-
   return (
-
     <Authenticator>
-
       {({ signOut, user }) => (
-
         <main>
-
           {user && (
-
             <h1>Welcome, {user.username}</h1>
-
           )}
-
           <button onClick={signOut}>Sign out</button>
-
           <h1>Upload a File</h1>
           {user &&     <FileUploader
       acceptedFileTypes={['image/*']}
@@ -69,10 +49,7 @@ export default function App() {
       isResumable
     />}
         </main>
-
       )}
-
     </Authenticator>
-
   );
 }
